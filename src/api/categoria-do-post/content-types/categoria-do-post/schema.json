@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "experiencias",
+  "collectionName": "categorias_de_posts",
   "info": {
-    "singularName": "experiencia",
-    "pluralName": "experiencias",
-    "displayName": "Experiencias",
+    "singularName": "categoria-do-post",
+    "pluralName": "categorias-de-posts",
+    "displayName": "Categorias de Posts",
     "description": ""
   },
   "options": {
@@ -25,32 +25,21 @@
       "type": "string",
       "required": true
     },
-    "ano": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
+      "type": "uid",
+      "targetField": "titulo",
       "required": true
     },
-    "cargo": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "decricao": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text",
-      "required": true
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "categoria_do_post"
     }
   }
 }

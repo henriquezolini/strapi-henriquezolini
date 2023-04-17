@@ -4,7 +4,8 @@
   "info": {
     "singularName": "formacao",
     "pluralName": "formacoes",
-    "displayName": "Formações"
+    "displayName": "Formações",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
     }
   },
   "attributes": {
-    "Titulo": {
+    "titulo": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "Ano": {
+    "ano": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -33,7 +34,7 @@
       "type": "string",
       "required": true
     },
-    "Local": {
+    "local": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -42,7 +43,7 @@
       "type": "string",
       "required": true
     },
-    "Descricao": {
+    "decricao": {
       "pluginOptions": {
         "i18n": {
           "localized": true

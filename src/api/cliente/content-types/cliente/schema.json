@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "singularName": "cliente",
+    "pluralName": "clientes",
+    "displayName": "Clientes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "data_nascimento": {
+      "type": "date"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "observacoes": {
+      "type": "richtext"
+    },
+    "consultas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::consulta.consulta",
+      "mappedBy": "cliente"
+    }
+  }
+}
